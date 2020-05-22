@@ -1,0 +1,145 @@
+body {
+	margin: 0;
+	height: 100%;
+}
+
+#wrapper {
+	height: 100vh;
+	display: grid;
+	grid-template-rows: 100px 1fr 100px;
+}
+
+#wrapper>* {
+	padding: 5px;
+}
+
+#header {
+	width: 50%;
+	position: relative;
+	margin: 0 auto;
+}
+
+#content {
+	width: 50%;
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+#footer {
+	background-color: red;
+	padding: 15px;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(3, 400px);
+	grid-gap: 5px;
+}
+
+.stretch {
+	align-items: stretch;
+}
+
+.item {
+	border: 1px;
+	border-style: solid;
+	border-color: rgb(212, 212, 212);
+}
+
+.item img {
+	width: 100%;
+	height: 50%;
+	display: block;
+}
+
+.item h4 {
+	background-color: red;
+	color: white;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.item p,
+h1 {
+	margin: 0 auto;
+	margin-left: 15px;
+	margin-top: 5px;
+	padding: 2px;
+}
+
+.item h1 {
+	font-weight: bold;
+}
+
+.item button {
+	background-color: red;
+	border: none;
+	color: white;
+	padding: 7px 15px;
+	text-align: center;
+	display: inline-block;
+	border-radius: 8px;
+	float: right;
+	margin-right: 15px;
+	margin-top: 25px;
+}
+
+.topnav {
+	overflow: hidden;
+	margin: 0 auto;
+	height: 90px;
+	margin-bottom: 15px;
+	text-align: center;
+  }
+  
+.topnav select, .btn{
+	height: 35px;
+	padding: 5px;
+}
+
+.topnav select, input{
+	border-radius: 2px;
+}
+
+  .topnav input {
+	  width: 60%;
+	  height: 29px;
+  }
+  .topnav select {
+	  width: 10%;
+  }
+  .topnav .btn {
+	background-color: red;
+	border: none;
+	color: white;
+	padding: 7px 15px;
+	text-align: center;
+	display: inline-block;	
+	width: 17%;
+  }
+
+  .topnav .right-btn {
+	float: right;
+	border-radius: 8px;
+  }
+
+  .topnav .top-btn {
+	margin: auto;
+  }
+
+  .navbar {
+	  width: 100%;
+	  position: absolute;
+	  bottom: 0;
+	  margin: 0 auto;
+  }
+  .navbar a {
+	  color: red;
+	  text-decoration: none;
+	  vertical-align: bottom;
+	  font-size: 15px;
+	  font-weight: bold;
+	  padding: 4%;
+  }
